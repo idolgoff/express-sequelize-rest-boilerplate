@@ -5,8 +5,8 @@ const Visualizer = require('webpack-visualizer-plugin');
 /*global __dirname*/
 /*eslint no-undef: "error"*/
 const PATHS = {
-    source: path.join(__dirname, '../src'),
-    build: path.join(__dirname, '../build')
+    source: path.join(__dirname, '..', 'src'),
+    build: path.join(__dirname, '..', 'build')
 };
 
 module.exports = {
@@ -35,6 +35,9 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        stats: 'errors-only'
     },
     plugins: [
         new Visualizer(),

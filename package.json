@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack/common.js"
+    "start": "webpack --config webpack/common.js",
+    "dev": "webpack-dev-server --config webpack/dev.js"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,12 @@
     "@types/express": "^4.0.39",
     "@types/node": "^8.0.54",
     "express": "^4.16.2",
+    "ts-loader": "^3.2.0",
     "typescript": "^2.2.2",
-    "ts-loader": "^3.1.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.5",
+    "webpack-hot-middleware": "^2.21.0",
+    "webpack-merge": "^4.1.1",
     "webpack-visualizer-plugin": "^0.1.11"
   }
 }
