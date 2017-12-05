@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "target": "es6",
+    "lib": [
+      "es2015"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "**/*.d.ts",
+    "./node_modules/*"
+  ]
+}
