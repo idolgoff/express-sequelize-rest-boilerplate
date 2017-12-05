@@ -10,6 +10,8 @@ const PATHS = {
 };
 
 module.exports = {
+    name: "server",
+    target: "node",
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx"]
     },
@@ -28,7 +30,7 @@ module.exports = {
                     transpileOnly: true,
                     compilerOptions: {
                         // use target=es5 for old browsers
-                        target: "es5",
+                        target: "es6",
                         // use module=es6 for tree-shaking and stuff
                         module: "ES6"
                     }
@@ -43,7 +45,6 @@ module.exports = {
         new Visualizer(),
         new webpack.NoEmitOnErrorsPlugin()
     ],
-    devtool: "source-map",
     node: {
         console: false,
         fs: 'empty',
