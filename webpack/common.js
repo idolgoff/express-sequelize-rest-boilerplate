@@ -43,5 +43,11 @@ module.exports = {
         new Visualizer(),
         new webpack.NoEmitOnErrorsPlugin()
     ],
-    devtool: "source-map"
+    devtool: "source-map",
+    node: {
+        console: false,
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty'
+    }
 };
