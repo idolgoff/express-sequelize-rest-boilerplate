@@ -44,7 +44,7 @@ sequelize-auto -h <host> -d <database> -u <user> -x [password] -p [port]  --dial
 Import works pretty well but after that be careful with table def.types
 Adding _as_ lets it work with ts-node-dev server without errors 
 
-```bash
+```typescript
  export const getModels = function(seq:sequelize.Sequelize):ITables {
    const tables:ITables = {
      spCats: seq.import(path.join(__dirname, './sp_cats')) → as def.spCatsModel ←,
