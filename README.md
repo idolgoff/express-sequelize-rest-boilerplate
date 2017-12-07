@@ -1,13 +1,17 @@
 # Server side boilerplate with TypeScript, Sequelize...
 
-This is a boilerplate for development with express, typescript powered by webpack with server side hot-reload
+This is a boilerplate for development rest api using existing database
+It allows to generate models from db and use them after with minimum hand correction
+
+It uses express, finale, sequelize, sequelize-auto, typescript 
+Powered by webpack or ts-node-dev with server auto-reload
 
 ## Structure
 ```bash
-> _import_models    - auto imported models
-> db                - models after hand correction
-> rest.ts           - apply finale-rest
-> index.ts          - main file
+> ./_import_models/    - auto imported models
+> ./db/                - models after hand correction
+> ./rest.ts            - apply finale-rest
+> ./index.ts           - main file
 ```
 
 ## Scripts
